@@ -46,7 +46,7 @@ const Profile = () => {
             Over the years ...
           </h2>
           <div
-            className={`text-xs xs:text-[16px] lg:text-lg font-normal max-md:text-center text-gray-600`}
+            className={` lg:text-lg font-normal max-md:text-center text-gray-600`}
           >
             <p className={``}>
               I gained professional experience developing web and mobile application from my previous companies, I worked with.
