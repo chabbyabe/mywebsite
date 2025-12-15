@@ -1,7 +1,7 @@
 import Projects from "./Projects";
 import mywebsiteImg from "../../assets/images/portfolio-images/mywebsite-p.png";
-import card2 from "../../assets/images/portfolio-images/card-2.png";
-import card3 from "../../assets/images/portfolio-images/card-3.png";
+import spiritualmImg from "../../assets/images/portfolio-images/spiritualm-p.png";
+import diary1 from "../../assets/images/portfolio-images/diary/diary-1.png";
 
 const projectData = [
   {
@@ -13,47 +13,50 @@ const projectData = [
       "My wesbsite to showcase my portfolio created fully with ReactJS",
     github: "https://github.com/chabbyabe/mywebsite",
     link: "https://abegailisidro.nl",
+    status: "Completed",
   },
     {
     id: 2,
-    image: card2,
+    image: spiritualmImg,
     category: "Front-end & Back-end Development",
     title: "Spiritual Maturity",
     description:
       "An online devotional web app made with Laravel & React (Typescript)",
     github: "https://github.com/chabbyabe/spiritualmweb",
     link: "https://spiritual.abegailisidro.nl",
+    status: "Todo",
   },
   {
     id: 3,
-    image: card2,
-    category: "Front-end & Back-end Development",
-    title: "Diary",
-    description:
-      "An online diary made with Laravel & React (Typescript)",
-    github: "https://github.com/chabbyabe/diary",
-    link: "https://diary.abegailisidro.nl",
-  },
-  {
-    id: 4,
-    image: card3,
+    image: mywebsiteImg,
     category: "Front-end & Back-end Development",
     title: "Expenses Tracker",
     description:
       "An expenses tracker to monitor the cash-out flow made with Python (Django) & React (TypeScript)",
     github: "https://github.com/chabbyabe/trackerapp",
     link: "https://tracker.abegailisidro.nl",
+    status: "Todo",
+  },
+  {
+    id: 4,
+    image: diary1,
+    category: "Front-end & Back-end Development",
+    title: "Diary",
+    description: "An online diary made with FilamentPHP v4",
+    github: "#",
+    link: "https://diary.abegailisidro.nl",
+    status: "In-progress",
   },
   {
     id: 5,
-    image: card3,
+    image: diary1,
     category: "Front-end & Back-end Development",
     title: "Pastag-Healthcare",
     description:
       "A health tracker, that tracks blood pressure and weight made with Python (Django) & React (TypeScript)",
     github: "https://github.com/aellivon/pastag-healthcare",
     link: "#",
-
+    status: "Completed",
   },
 ];
 
