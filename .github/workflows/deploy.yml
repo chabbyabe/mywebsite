@@ -22,7 +22,9 @@ jobs:
             cd ${{ secrets.WORK_DIR }}
             git checkout ${{ secrets.MAIN_BRANCH }}
             git pull origin  ${{ secrets.MAIN_BRANCH }}
+            rm -r node_modules
             npm install
+            npm cache clean --force
             npm run build
           # composer install
           # composer update
