@@ -1,0 +1,30 @@
+name: Website Deploy to Production
+on:
+  workflow_run:
+    workflows: [Website Portfolio]
+    types:
+      - completed
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-20.04
+
+    steps:
+      - name: Deploy to Production
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          port: ${{ secrets.SSH_PORT }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: |
+            cd ${{ secrets.WORK_DIR }}
+            git checkout ${{ secrets.MAIN_BRANCH }}
+            git pull origin  ${{ secrets.MAIN_BRANCH }}
+            php -v
+            alias php82='/opt/remi/php82/root/bin/php'
+            php82 -v
+            php82 ../bin/composer install
+            php82 ../bin/composer update
+            php82 artisan migrate --force
