@@ -1,7 +1,7 @@
 import Projects from "./Projects";
 import mywebsiteImg from "../../assets/images/portfolio-images/mywebsite-p.png";
 import spiritualmImg from "../../assets/images/portfolio-images/spiritualm-p.png";
-import diary1 from "../../assets/images/portfolio-images/diary/diary-1.png";
+import diary from "../../assets/images/portfolio-images/diary.png";
 
 const projectData = [
   {
@@ -39,7 +39,7 @@ const projectData = [
   },
   {
     id: 4,
-    image: diary1,
+    image: diary,
     category: "Front-end & Back-end Development",
     title: "Diary",
     description: "An online diary made with FilamentPHP v4",
@@ -49,7 +49,7 @@ const projectData = [
   },
   {
     id: 5,
-    image: diary1,
+    image: mywebsiteImg,
     category: "Front-end & Back-end Development",
     title: "Pastag-Healthcare",
     description:
