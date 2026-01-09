@@ -27,4 +27,6 @@ jobs:
             php82 -v
             php82 ../bin/composer install
             php82 ../bin/composer update
+            npm install
+            npm run build
             php82 artisan migrate --force
