@@ -1,9 +1,8 @@
 name: Website Deploy to Production
 on:
-  workflow_run:
-    workflows: [Website Portfolio]
-    types:
-      - completed
+  push:
+    branches:
+      - main
   workflow_dispatch:
 
 jobs:
