@@ -23,7 +23,7 @@ jobs:
             git checkout ${{ secrets.MAIN_BRANCH }}
             git pull origin  ${{ secrets.MAIN_BRANCH }}
             php -v
-            alias php82='/opt/remi/php82/root/bin/php'
+            alias php82='/usr/bin/php8.2'
             php82 -v
             php82 ../bin/composer install
             php82 ../bin/composer update
