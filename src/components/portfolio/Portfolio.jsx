@@ -24,7 +24,7 @@ const projectData = [
       "An online devotional web app made with Laravel & React (Typescript)",
     github: "https://github.com/chabbyabe/spiritualmweb",
     link: "https://spiritual.abegailisidro.nl",
-    status: "Todo",
+    status: "In-progress",
   },
   {
     id: 3,
@@ -35,7 +35,7 @@ const projectData = [
       "An expenses tracker to monitor the cash-out flow made with Python (Django) & React (TypeScript)",
     github: "https://github.com/chabbyabe/trackerapp",
     link: "https://tracker.abegailisidro.nl",
-    status: "Todo",
+    status: "In-progress",
   },
   {
     id: 4,
@@ -44,8 +44,8 @@ const projectData = [
     title: "Diary",
     description: "An online diary made with FilamentPHP v4",
     github: "#",
-    link: "https://diary.abegailisidro.nl",
-    status: "In-progress",
+    link: "https://diary.abegailisidro.nl/",
+    status: "Completed",
   },
   {
     id: 5,
