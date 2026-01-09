@@ -35,7 +35,7 @@ const projectData = [
       "An expenses tracker to monitor the cash-out flow made with Python (Django) & React (TypeScript)",
     github: "https://github.com/chabbyabe/trackerapp",
     link: "https://tracker.abegailisidro.nl",
-    status: "In-progress",
+    status: "Todo",
   },
   {
     id: 4,
